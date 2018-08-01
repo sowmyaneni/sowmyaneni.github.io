@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projects</title>
+  <link type="text/css" rel="stylesheet"
+   href="css/style.css"/>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html">About</a></li>
+    <li><a href="work_experience.html">Work Experience</a></li>
+    <li class=selected>Projects</li>
+    <li><a href="personal.html">Personal</a></li>
+  </ul>
+</nav>
+
+  <article>
+    <section>
+<h2>HANGMAN GAME <img src="images/Hangman.jpg" alt="Hangman picture" align="right" width="24%" height="30%"/></h2>
+<p>
+  This is a variation of the classic wordgame 'Hangman'. In general Hangman is a guessing game
+  for two or more players. One player thinks of a word and the other player tries to guess it
+  by suggesting letters, within a certain number of guesses. The word to guess is represented
+  by a row of dashes, representing each letter of the word. In this problem, the second player
+  will always be the computer, who will be picking a word at random.
+</p>
+  <p>The code loads a list of words from a file named <a href="https://github.com/sowmyaneni/Problem_Solving/blob/master/words.txt" target="_blank"><strong><code>words.txt</code></strong></a>.</p>
+  <p> <a href="https://github.com/sowmyaneni/Problem_Solving/blob/master/MIT_hangman_game.py" target="_blank">Code on Github</a></p>
+<h4>Requirements</h4>
+<ol>
+  <li>
+    <p>The computer selects a word at random from the list of available words provided in <strong><code>words.txt</code></strong></p>
+  </li>
+  <li>
+    <p>The game is interactive; the flow of the game is as follows:</p>
+  </li>
+  <ul>
+  <li>
+      <p>At the start of the game, the user will know how many letters the computer's word contains.</p>
+    </li>
+    <li>
+      <p>User should supply one guess (i.e. letter) per round.</p>
+    </li>
+    <li>
+      <p>After each round, the partially guessed word is displayed so far, as well
+      as letters that the user has not yet guessed.</p>
+    </li>
+  </ul>
+  <li>
+    <p>Some additional rules of the game:</p>
+  </li>
+  <ul>
+    <li>
+      <p>A user is allowed 8 guesses. User will be reminded of the number of guesses left after each round.
+        Assume that players will only ever submit one character at a time (A-Z).</p>
+    </li>
+    <li>
+      <p>A user loses a guess only when s/he guesses incorrectly.</p>
+    </li>
+    <li>
+      <p>If the user guesses the same letter twice,  a guess is not taken away - instead, a message is printed letting the user know that they've already guessed that letter and will be asked to try again.</p>
+    </li>
+    <li>
+      <p>The game will end when the user constructs the full word or runs out of guesses. If the player runs out of guesses (s/he "loses"), reveal the word to the user when the game ends.</p>
+    </li>
+  </ul>
+</ol>
+</section>
+
+<section>
+  <h2>SAMPLE OUTPUT</h2>
+  <pre>
+sowmyas-MacBook-Pro:Problem_Solving sowmya$ python3.6 MIT_hangman_game.py
+Loading word list from file...
+   55909 words loaded.
+Welcome to the game, Hangman!
+I am thinking of a word that is 4 letters long.
+----------------
+You have  8  guesses left.
+Available letters:  abcdefghijklmnopqrstuvwxyz
+Please guess a letter: a
+Good guess:  _ a _ _
+-----------
+You have  8  guesses left.
+Available letters:  bcdefghijklmnopqrstuvwxyz
+Please guess a letter: t
+Good guess:  _ a t _
+-----------
+You have  8  guesses left.
+Available letters:  bcdefghijklmnopqrsuvwxyz
+Please guess a letter: h
+Oops! That letter is not in my word:  _ a t _
+-----------
+You have  7  guesses left.
+Available letters:  bcdefgijklmnopqrsuvwxyz
+Please guess a letter: e
+Good guess:  _ a t e
+-----------
+You have  7  guesses left.
+Available letters:  bcdfgijklmnopqrsuvwxyz
+Please guess a letter: l
+Oops! That letter is not in my word:  _ a t e
+-----------
+You have  6  guesses left.
+Available letters:  bcdfgijkmnopqrsuvwxyz
+Please guess a letter: d
+Oops! That letter is not in my word:  _ a t e
+-----------
+You have  5  guesses left.
+Available letters:  bcfgijkmnopqrsuvwxyz
+Please guess a letter: f
+Good guess:  f a t e
+-----------
+Congratulations, you won!
+  </pre>
+</section>
+</article>
+
+</body>
+</html>
