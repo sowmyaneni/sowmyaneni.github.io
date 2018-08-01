@@ -166,11 +166,11 @@ section{
   margin-bottom: 24px;
   min-height: 320px;
   padding-left: 24px;
+  padding-bottom: 5px;
   padding-right: 24px;
   margin-right: 24px;
   width:90%;
 }
-
 
 footer p.copyright{
   float:left;
